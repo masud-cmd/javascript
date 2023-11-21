@@ -1,47 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>The Hangman</title>
-	<link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Hangman</title>
+    <link rel="stylesheet" href="style.css" />
 
-	<!----------- FONTS ---------->
+    <!----------- FONTS ---------->
 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
-
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet"
+    />
 </head>
 <body>
 
 	<header>
-		<h1>Hangman</h1>
-	</header>
+    <h1>Hangman</h1>
+    </header>
 
-	<main>
-		<section class="start" id="start">
-			<label for="userInput">Username</label>
-			<input type="text" name="username" id="userInput">
+    <main>
+    <section class="start" id="start">
+
+<div class="user-container">
 
 
-			<div class="level">
-				<input type="radio" id="easy" name="level" value="easy">
-				<label for="easy">Easy</label>
-
-				<input type="radio" id="medium" name="level" value="medium">
-				<label for="medium">Medium</label>
-
-				<input type="radio" id="hard" name="level" value="hard">
-				<label for="hard">Hard</label>
-			</div>
-
-		</section>
+	<div>
+        <label for="userInput">
+			<input type="text" name="username" id="userInput" placeholder="username"/>
+		</label>
+	</div>
 
 
 
+	<div class="levels">
+		<div>
+			<h2>Välj nivå</h2>
+		</div>
 
-	</main>
+		<input type="radio" id="easy" name="level" value="easy" />
+        <label for="easy">Easy</label>
+
+        <input type="radio" id="medium" name="level" value="medium" />
+        <label for="medium">Medium</label>
+
+        <input type="radio" id="hard" name="level" value="hard" />
+        <label for="hard">Hard</label>
+    </div>
+
+
+	<button class="play-button" id="play-btn">Play</button>
+
+
+
+
+    </section>
+    </main>
 </body>
 </html>
