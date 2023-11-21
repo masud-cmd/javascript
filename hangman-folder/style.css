@@ -24,6 +24,15 @@ body{
 
 }
 
+.start{
+	display: visible;
+}
+
+.invisible{
+	display: none;
+}
+
+
 .user-container{
 	display: grid;
 	gap: 2em;
