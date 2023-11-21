@@ -20,5 +20,10 @@ play.addEventListener('click', () => {
 	startPage.classList.remove('start')
 	startPage.classList.add('invisible')
 
+	//Osäker på dessa men en  skiss
+	localStorage.setItem("Name", input.name);
+	localStorage.setItem("Level", input.level);
+
+
 
 })
