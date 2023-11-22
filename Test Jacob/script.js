@@ -24,7 +24,6 @@ play.addEventListener('click', () => {
 
 	startPage.classList.add('invisible')
 	gamePage.classList.remove('invisible')
-	// gamePage.classList.add('gamePageShow')
 
 	//Osäker på dessa men en skiss
 	// localStorage.setItem("Name", input.name);
@@ -33,7 +32,6 @@ play.addEventListener('click', () => {
 
 })
 
-// const parts = document.querySelectorAll('.gubbe svg')
 const svgElement = document.querySelector('.gubbe svg');
 const ground = svgElement.querySelector('#ground');
 const scaffold = svgElement.querySelector('#scaffold');
@@ -43,7 +41,7 @@ const arms = svgElement.querySelector('#arms');
 const legs = svgElement.querySelector('#legs');
 
 const parts = [ground, scaffold, head, body, arms, legs];
-let currentIndex = 0; // Håller reda på vilken del som ska visas nästa
+let currentIndex = 0; // Håller reda på vilken del som visas näst
 
 
 // Döljer gubbben från start
