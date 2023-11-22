@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Hangman</title>
+    <link rel="stylesheet" href="style.css" />
+	<script src="script.js" defer></script>
+
+    <!----------- FONTS ---------->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet"
+    />
+</head>
+<body>
+
+	<header>
+    <h1>Hangman</h1>
+    </header>
+
+    <main>
+    <section class="start" id="startSection">
+
+<div class="user-container">
+
+
+	<div>
+        <label for="userInput">
+			<input type="text" name="username" id="userInput" placeholder="username" required>
+		</label>
+	</div>
+
+
+
+	<div class="levels">
+		<div>
+			<h2>Välj nivå</h2>
+		</div>
+
+		<input type="radio" id="easy" name="level" value="easy" />
+        <label for="easy">Easy</label>
+
+        <input type="radio" id="medium" name="level" value="medium" />
+        <label for="medium">Medium</label>
+
+        <input type="radio" id="hard" name="level" value="hard" />
+        <label for="hard">Hard</label>
+    </div>
+
+
+	<button class="play-button" id="play-btn">Play</button>
+
+</section>
+
+
+
+	<section class="game">
+
+
+
+
+	</section>
+
+    </main>
+</body>
+</html>
