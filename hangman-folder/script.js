@@ -3,8 +3,6 @@
 
 ---- TO DO ------
 
-1. Länka Play knappen så att det sparar username + nivå samt bytter section(ändrar css klass till Display: none)
-
 
 */
 
@@ -13,27 +11,27 @@
 const startPage = document.querySelector('#startSection')
 const gamePage = document.querySelector('#gamePage')
 const killBtn = document.querySelector('#kill-btn')
-// const scorePage = document.querySelector('')
 
 const play = document.querySelector('#play-btn')
 
+document.querySelectorAll('input[name="difficulty"]').forEach(input => {
+    input.addEventListener('change', function(event) {
+        selectedDifficulty = event.target.value;
+    });
+});
 
-// const gubbe = document.querySelector('.gubbe')
 
 play.addEventListener('click', () => {
-
 	startPage.classList.add('invisible')
 	gamePage.classList.remove('invisible')
-	// gamePage.classList.add('gamePageShow')
 
 	//Osäker på dessa men en skiss
 	// localStorage.setItem("Name", input.name);
 	// localStorage.setItem("Level", input.level);
 
-
 })
 
-// const parts = document.querySelectorAll('.gubbe svg')
+// Kroppsdelar upp
 const svgElement = document.querySelector('.gubbe svg');
 const ground = svgElement.querySelector('#ground');
 const scaffold = svgElement.querySelector('#scaffold');
