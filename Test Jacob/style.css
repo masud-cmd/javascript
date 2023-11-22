@@ -23,13 +23,8 @@ body{
 
 }
 
-.start{
-	display: visible;
-}
 
-.invisible{
-	display: none;
-}
+
 
 
 .user-container{
@@ -44,7 +39,10 @@ body{
 	width: 100%;
 	display: inline-flex;
 	justify-content: center;
+}
 
+.invisible{
+	display: none;
 }
 
 .user{
@@ -71,3 +69,11 @@ body{
 	padding: 1em 3em;
 }
 
+/* 
+.gamePageHide{
+	display: none;
+}
+
+.gamePageShow{
+	display: block;
+} */
