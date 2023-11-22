@@ -20,9 +20,6 @@ const play = document.querySelector('#play-btn')
 
 // const gubbe = document.querySelector('.gubbe')
 
-
-
-
 play.addEventListener('click', () => {
 
 	startPage.classList.add('invisible')
@@ -65,6 +62,9 @@ killBtn.addEventListener('click', () => {
         currentIndex = 0;
     }
 });
+
+
+
 
 
 
