@@ -6,8 +6,10 @@
     <title>The Hangman</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="keyboard.css">
+    <link rel="stylesheet" href="highscore.css">
     <script src="wordselect.js" defer></script>
 	<script src="script.js" defer></script>
+
 
 
     <!----------- FONTS ---------->
@@ -63,8 +65,9 @@
 
 <section class="invisible" id="gamePage">
 
-<button id="highScorePage"> High Score</button>
+<button id="highScore-btn">High Score</button>
 
+<!-------- THE HANGING MAN --------->
 <figure class="gubbe">
     <svg width="501" height="565" viewBox="0 0 501 565" fill="none" xmlns="http://www.w3.org/2000/svg">
         <ellipse id="ground" cx="250.5" cy="536" rx="250.5" ry="29" fill="black" fill-opacity="0.06"/>
@@ -76,11 +79,13 @@
     </svg>
 </figure>
 
+
+<!-------- KEYBOARD --------->
    <div class="key-container">
 
             <div class="row1">
               <div> Q </div>
-              <div> W </div>‡‡’
+              <div> W </div>
               <div> E </div>
               <div> R </div>
               <div> T </div>
@@ -120,11 +125,64 @@
 
 <button id="kill-btn"> Press to kill</button>
 
-
 </section>
 
-</section>
 
+
+<section class="invisible" id="highScorePage">
+
+    <div class="highScore-container">
+         <table>
+
+            <tr>
+                <th scope="col">Player</th>
+                <th scope="col">Length</th>
+                <th scope="col">Guesses</th>
+                <th scope="col">Date</th>
+                <th scope="col">Result</th>
+            </tr>
+            <tr>
+                <th scope="row">${user.data}</th>
+                <td>7</td>
+                <td>13</td>
+                <td>4,569</td>
+                <td>4,569</td>
+            </tr>
+               <tr>
+                <th scope="row">${user.data}</th>
+                <td>7</td>
+                <td>13</td>
+                <td>4,569</td>
+                <td>4,569</td>
+            </tr>
+              <tr>
+                <th scope="row">${user.data}</th>
+                <td>7</td>
+                <td>13</td>
+                <td>4,569</td>
+                <td>4,569</td>
+            </tr>
+
+               <tr>
+                <th scope="row">${user.data}</th>
+                <td>7</td>
+                <td>13</td>
+                <td>4,569</td>
+                <td>4,569</td>
+            </tr>
+
+               <tr>
+                <th scope="row">${user.data}</th>
+                <td>7</td>
+                <td>13</td>
+                <td>4,569</td>
+                <td>4,569</td>
+            </tr>
+</table>
+
+    </div>
+
+</section>
 </main>
 </body>
 </html>

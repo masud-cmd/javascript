@@ -12,10 +12,11 @@
 //Saknar: Spara ner värdet
 const startPage = document.querySelector('#startSection')
 const gamePage = document.querySelector('#gamePage')
-const killBtn = document.querySelector('#kill-btn')
-// const scorePage = document.querySelector('')
+const scorePage = document.querySelector('#highScorePage')
+
 
 const play = document.querySelector('#play-btn')
+const scoreButton = document.querySelector('#highScore-btn')
 
 
 // const gubbe = document.querySelector('.gubbe')
@@ -29,8 +30,22 @@ play.addEventListener('click', () => {
 	// localStorage.setItem("Name", input.name);
 	// localStorage.setItem("Level", input.level);
 
+})
+
+
+scoreButton.addEventListener('click', () => {
+
+	gamePage.classList.add('invisible')
+	highScorePage.classList.remove('invisible')
+
+	//Osäker på dessa men en skiss
+	// localStorage.setItem("Name", input.name);
+	// localStorage.setItem("Level", input.level);
 
 })
+
+
+
 
 const svgElement = document.querySelector('.gubbe svg');
 const ground = svgElement.querySelector('#ground');
