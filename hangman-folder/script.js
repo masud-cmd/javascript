@@ -14,7 +14,7 @@ const killBtn = document.querySelector('#kill-btn')
 
 const play = document.querySelector('#play-btn')
 
-document.querySelectorAll('input[name="difficulty"]').forEach(input => {
+document.querySelectorAll('input[name="level"]').forEach(input => {
     input.addEventListener('change', function(event) {
         selectedDifficulty = event.target.value;
     });
