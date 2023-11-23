@@ -1,6 +1,6 @@
 import words from "./svenska-ord.js";
 
-let selectedDifficulty = null;
+let level = null;
 
 function easyPeasy(words) {
     const easyWords = words.filter(word => word.length === 10)

@@ -16,7 +16,7 @@ const scorePage = document.querySelector('#highScorePage')
 
 
 const play = document.querySelector('#play-btn')
-const scoreButton = document.querySelector('#highScore-btn')
+
 
 
 // const gubbe = document.querySelector('.gubbe')
@@ -33,16 +33,25 @@ play.addEventListener('click', () => {
 })
 
 
+// Game > Highscore Page
+const scoreButton = document.querySelector('#highScore-btn')
 scoreButton.addEventListener('click', () => {
 
 	gamePage.classList.add('invisible')
 	highScorePage.classList.remove('invisible')
 
-	//Osäker på dessa men en skiss
-	// localStorage.setItem("Name", input.name);
-	// localStorage.setItem("Level", input.level);
+})
+
+// Highscore > Game Page (toggle back?)
+
+const backToGame = document.querySelector('#backToGameBtn')
+backToGame.addEventListener('click', () => {
+
+	highScorePage.classList.add('invisible')
+	gamePage.classList.remove('invisible')
 
 })
+
 
 
 
@@ -69,6 +78,7 @@ killBtn.addEventListener('click', () => {
     if (currentIndex < parts.length) {
         parts[currentIndex].classList.remove('invisible');
         currentIndex++; // Öka indexet för nästa klick
+
     } else {
         // Återställ indexet om alla delar har visats
         parts.forEach(part => part.classList.add('invisible'));
